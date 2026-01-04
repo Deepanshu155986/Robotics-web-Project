@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Robotics Club</title>
+  <link rel="stylesheet" href="events.css">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">⚙ Robotics Club</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a class="active" href="#">Events</a>
+    <a href="#">Team</a>
+    <a href="#">News</a>
+    <a href="#">Achievements</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== PAGE TITLE ===== -->
+<section class="page-title">
+  <h1>Events</h1>
+</section>
+
+<!-- ===== UPCOMING EVENTS ===== -->
+<section class="section">
+  <div class="section-header">
+    <h2>Upcoming Events</h2>
+    <select id="sort">
+      <option>Sort by Date</option>
+    </select>
+  </div>
+
+  <div class="grid" id="eventsGrid">
+
+    <!-- Event Card -->
+    <div class="card" data-date="2024-03-15">
+      <span class="tag competition">Competition</span>
+      <h3>RoboWars 2024 Championship</h3>
+      <p>📅 March 15, 2024</p>
+      <p>⏰ 10:00 AM – 5:00 PM</p>
+      <p>📍 Main Arena, Sports Complex</p>
+      <p class="desc">
+        The most anticipated robot combat competition of the year.
+      </p>
+      <button>Register Interest</button>
+    </div>
+
+    <div class="card" data-date="2024-03-22">
+      <span class="tag workshop">Workshop</span>
+      <h3>Advanced AI Workshop</h3>
+      <p>📅 March 22, 2024</p>
+      <p>⏰ 2:00 PM – 5:00 PM</p>
+      <p>📍 AI Lab, Engineering Building</p>
+      <p class="desc">
+        Neural networks, computer vision & ML in robotics.
+      </p>
+      <button>Register Interest</button>
+    </div>
+
+    <div class="card" data-date="2024-05-10">
+      <span class="tag workshop">Workshop</span>
+      <h3>IoT & Embedded Systems Bootcamp</h3>
+      <p>📅 May 10, 2024</p>
+      <p>⏰ 10:00 AM – 3:00 PM</p>
+      <p>📍 Electronics Lab</p>
+      <p class="desc">
+        ESP32, sensors, embedded programming & IoT protocols.
+      </p>
+      <button>Register Interest</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ONGOING PROJECTS ===== -->
+<section class="section">
+  <h2>Ongoing Projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <span class="tag progress">In Progress</span>
+      <h3>Autonomous Delivery Bot</h3>
+      <p>Self-navigating robot using CV & GPS.</p>
+      <div class="progress-bar"><span style="width:65%"></span></div>
+      <small>65% Complete</small>
+    </div>
+
+    <div class="card">
+      <span class="tag progress">In Progress</span>
+      <h3>Smart Agriculture System</h3>
+      <p>IoT-based irrigation & crop monitoring.</p>
+      <div class="progress-bar"><span style="width:45%"></span></div>
+      <small>45% Complete</small>
+    </div>
+
+    <div class="card">
+      <span class="tag progress">In Progress</span>
+      <h3>Robotic Arm Assistant</h3>
+      <p>6-DOF robotic arm with gesture control.</p>
+      <div class="progress-bar"><span style="width:80%"></span></div>
+      <small>80% Complete</small>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAST EVENTS ===== -->
+<section class="section">
+  <h2>Past Events</h2>
+
+  <div class="past-grid">
+    <div class="past-card purple">
+      🎓 <h3>AI Workshop Series</h3>
+      <p>December 2023</p>
+    </div>
+
+    <div class="past-card pink">
+      🏆 <h3>RoboWars 2023</h3>
+      <p>November 2023</p>
+    </div>
+
+    <div class="past-card blue">
+      🎤 <h3>Guest Lecture</h3>
+      <p>October 2023</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div>
+    <h4>Quick Links</h4>
+    <p>Home<br>About<br>Projects<br>Events</p>
+  </div>
+
+  <div>
+    <h4>Resources</h4>
+    <p>Team<br>News<br>Achievements<br>Contact</p>
+  </div>
+
+  <div>
+    <h4>Connect With Us</h4>
+    <p>📸 💼 💬</p>
+  </div>
+</footer>
+
+<script src="events.js"></script>
+</body>
+</html>
