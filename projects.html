@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics Club | Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,13 +17,13 @@
             <img id="logo" src="image/logo.png" >
             <div id="navbar">            
                 <a class="nav-btn" href="index.html">Home</a>
-                <a class="nav-btn" href="about.html">About</a>
                 <a class="nav-btn" href="projects.html">Projects</a>
                 <a class="nav-btn" href="events.html">Events</a>
                 <a class="nav-btn" href="team.html">Team</a>
                 <a class="nav-btn" href="news.html">News</a>
                 <a class="nav-btn" href="achievments.html">Achievements</a>
                 <a class="nav-btn" href="contact.html">Contact</a>
+                <a class="nav-btn" href="about.html">About</a>
             </div>
         </div>
         
@@ -30,51 +31,61 @@
     </header>
 
     <!-- ===== PROJECTS SECTION === -->
-    <main>
+    <main >
+        <div id="project-head">
+            <p class="project-intro">
+    Our projects reflect innovation, teamwork, and hands-on engineering.
+    From autonomous robots to IoT-based smart systems, we build solutions
+    that solve real-world problems and compete at national-level events.
+</p>
 
-        <!-- Title -->
-        <section>
-            <h1>Our Projects</h1>
-        </section>
 
-        <!-- Filters -->
-        <section>
-            <button>All Projects</button>
-            <button>2023</button>
-            <button>2022</button>
-            <button>Drone</button>
-            <button>AI</button>
-            <button>IoT</button>
-        </section>
-
-        <!-- ================= PROJECT CARDS ================= -->
-        <section>
+            
+            <!-- Title -->
+            <section>
+                <h1>Our Projects</h1>
+            </section>
+            
+        </div>
+            <!-- Filters -->
+            <section class="filters">
+                <button class="filter-btn">All Projects</button>
+                <button class="filter-btn">2023</button>
+                <button class="filter-btn">2022</button>
+                <button class="filter-btn">Arduino</button>
+                <button class="filter-btn">Raspberry Pi</button>
+                <button class="filter-btn">IoT</button>
+            </section>
+        <div class ="project-main">
+    
+    <!-- ================= PROJECT CARDS ================= -->
+    <section>
+        <div id="first-el">
 
             <!-- Project 1 -->
-            <article>
+            <article class="p">
                 <h3>Line Following Car</h3>
                 <p><strong>Year:</strong> 2023</p>
                 <p>
                     An autonomous robot that follows a predefined path using IR sensors and PID control. Designed for speed optimization and stability in competitions.
                 </p>
                 <p><strong>Tech:</strong> Arduino, IR Sensors, DC Motors, PID, C++</p>
+               </article>
             
-                
-            </article>
-
             <!-- Project 2 -->
-            <article>
+            <article class="p">
                 <h3>Obstacle Avoiding Robot</h3>
                 <p><strong>Year:</strong> 2023</p>
                 <p>
                     A smart robot capable of detecting and avoiding obstacles in real time using ultrasonic sensors and decision logic.
                 </p>
-                <p><strong>Tech:</strong> Arduino, Ultrasonic Sensor, Servo Motor, C++</p>
-                
+                <p><strong>Tech:</strong> Arduino, Ultrasonic Sensor, Servo Motor, C++</p>                
             </article>
+        </div>
+        <div id="second-el">
 
             <!-- Project 3 -->
-            <article>
+            <article class="p">
                 <h3>Smart Home IoT System</h3>
                 <p><strong>Year:</strong> 2023</p>
                 <p>
@@ -83,18 +94,20 @@
                 <p><strong>Tech:</strong> Raspberry Pi, MQTT, Node.js, Android</p>
                 
             </article>
-
+            
             <!-- Project 4 -->
-            <article>
+            <article class="p">
                 <h3>Smart Irrigation System</h3>
                 <p><strong>Year:</strong> 2022</p>
                 <p>
                     An automated irrigation system that optimizes water usage based on soil moisture and weather data.
                 </p>
                 <p><strong>Tech:</strong>Soil Sensor, ESP8266, IoT Cloud </p>
-                </article>
-
-        </section>
+            </article>
+        </div>
+        
+    </section>
+</div>
 
     </main>
 
