@@ -1102,6 +1102,107 @@ body{
     align-items: flex-start;
   }
 }
+/* ================= FACULTY SECTION ================= */
+.faculty-section {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 30px;
+}
+
+.faculty-card {
+  background: linear-gradient(135deg, #0b1120, #111827);
+  color: white;
+  padding: 35px 60px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  max-width: 500px;
+}
+
+.faculty-card h2 {
+  color: #47e4e4;
+  margin-bottom: 8px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.faculty-card h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.faculty-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ================= TEAM MEMBERS ================= */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 40px 60px 60px;
+}
+
+.team-card {
+  background: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.team-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #47e4e4, #9ff6f6);
+  opacity: 0;
+  transition: opacity 0.35s;
+  z-index: 0;
+}
+
+.team-card:hover::before {
+  opacity: 0.15;
+}
+
+.team-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+}
+
+.team-card h3,
+.team-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #0b1120;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .faculty-card {
+    padding: 30px;
+  }
+
+  .team-container {
+    padding: 30px 20px;
+  }
+}
+
 
 
 
