@@ -16,7 +16,7 @@
 }
 
 body {
-   background:linear-gradient(rgb(14, 32, 97),rgb(179, 59, 127));
+   background:linear-gradient(rgb(14, 32, 97),rgb(192, 88, 147));
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -80,15 +80,16 @@ header {
    HERO SECTION (HOME)
 --= */
 .hero-section {
-     background:linear-gradient(rgb(9, 21, 63));
+    background:none;
     min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ecf0f1;
-    padding: 40px 20px;
+    padding: 40px 40px;
     text-align: center;
     width: 100%;
+ box-sizing: border-box;
 }
 
 .hero-content {
