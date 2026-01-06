@@ -1892,7 +1892,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px;
     font-weight: 600;
     color: #fbbf24;
-    
+    margin-left: 30px;
    
 }
 
@@ -1908,8 +1908,9 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 12px;
     border: 1px solid rgba(234, 179, 8, 0.3);
     position: absolute;
-    
+    left:15px;
     margin-left: -50px;
+    padding-left: 10px;
 }
 
 .achievement-title {
@@ -2047,213 +2048,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
- /*ACHIEVEMENT HIGHLIGHT CARD
---= */
-.achievement-highlight {
-    background: rgba(30, 41, 59, 0.4);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(234, 179, 8, 0.2);
-    border-radius: 24px;
-    padding: 50px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.achievement-highlight::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at top left, rgba(234, 179, 8, 0.1), transparent 50%);
-    pointer-events: none;
-}
-
-.achievement-highlight:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 25px 70px rgba(234, 179, 8, 0.3);
-    border-color: rgba(234, 179, 8, 0.4);
-}
-
-.achievement-content {
-    position: relative;
-    z-index: 1;
-}
-
-.achievement-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 20px;
-    background: rgba(234, 179, 8, 0.15);
-    border: 1px solid rgba(234, 179, 8, 0.3);
-    padding: 10px 20px;
-    border-radius: 50px;
-    margin-bottom: 25px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fbbf24;
-    margin-left: 20px;
-}
-
-.achievement-badge::before {
-    content: "🏆";
-    font-size: 24px;
-    background: rgba(234, 179, 8, 0.2);
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    border: 1px solid rgba(234, 179, 8, 0.3);
-    position: absolute;
-    left: 5px;
-    margin-left: -50px;
-}
-
-.achievement-title {
-    font-size: clamp(28px, 4vw, 42px);
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 20px;
-    line-height: 1.3;
-    font-weight: 700;
-}
-
-.achievement-description {
-    color: #cbd5f5;
-    font-size: clamp(15px, 1.8vw, 17px);
-    line-height: 1.7;
-    margin-bottom: 0;
-}
-
-.achievement-image {
-    width: 100%;
-    height: 100%;
-    min-height: 300px;
-    background: rgba(234, 179, 8, 0.05);
-    border: 1px solid rgba(234, 179, 8, 0.2);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.achievement-image:hover {
-    border-color: rgba(234, 179, 8, 0.4);
-}
-
-.achievement-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-/* Placeholder text for empty achievement image */
-.achievement-image:empty::before {
-    content: "🏆 Achievement Photo";
-    color: #94a3b8;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-/* --
-   MID-SECTION RESPONSIVE
---= */
-@media (max-width: 1024px) {
-    .achievement-highlight {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .achievement-image {
-        min-height: 250px;
-        order: -1;
-    }
-}
-
-@media (max-width: 768px) {
-    .mid-section {
-        gap: 30px;
-        padding: 50px 5%;
-    }
-
-    .event-highlight,
-    .achievement-highlight {
-        padding: 35px;
-    }
-
-    .event-badge,
-    .achievement-badge {
-        font-size: 13px;
-        padding: 8px 16px;
-    }
-
-    .event-icon,
-    .achievement-badge::before {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
-
-    .achievement-highlight {
-        grid-template-columns: 1fr;
-    }
-
-    .achievement-image {
-        min-height: 220px;
-    }
-}
-
-@media (max-width: 480px) {
-    .mid-section {
-        padding: 40px 5%;
-        gap: 25px;
-    }
-
-    .event-highlight,
-    .achievement-highlight {
-        padding: 25px;
-    }
-
-    .event-btn {
-        padding: 14px 28px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .achievement-image {
-        min-height: 180px;
-    }
-
-    .achievement-badge::before {
-        position: relative;
-        margin-left: 0;
-        margin-right: 10px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .mid-section {
-        padding: 100px 5%;
-    }
-}
-
-
+ 
 /* --
    ACHIEVEMENTS PAGE
 --= */
