@@ -54,6 +54,7 @@ header {
     height: 50px;
     object-fit: contain;
     margin-right:  450px;
+    
 }
 
 #navbar {
@@ -920,101 +921,192 @@ header {
 /* --
    TEAM PAGE
 --= */
-.header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #0b1120, #111827);
-    color: white;
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header h1 {
-    font-size: clamp(32px, 5vw, 42px);
-    margin-bottom: 10px;
+/* ================= BODY ================= */
+
+
+/* ================= PAGE TITLE ================= */
+.page-title {
+  text-align: center;
+  padding: 70px 20px 40px;
 }
 
-.header p {
-    font-size: clamp(16px, 2vw, 18px);
-    opacity: 0.9;
+.page-title h1 {
+  font-size: 42px;
+  font-weight: 600;
 }
 
-.team-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 30px;
-    padding: 60px 5%;
-    max-width: 1200px;
-    margin: 0 auto;
+/* ================= FACULTY ADVISOR ================= */
+.advisor-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.team-card {
-    background: white;
-    padding: 30px 20px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.35s ease;
-    position: relative;
-    overflow: hidden;
+.advisor-card {
+  background: #0b122c;
+  width: min(720px, 95%);
+  padding: 45px 35px;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
 }
 
-.team-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, #47e4e4, #9ff6f6);
-    opacity: 0;
-    transition: opacity 0.35s;
-    z-index: 0;
+.advisor-card h2 {
+  font-size: 26px;
+  margin-top: 15px;
 }
 
-.team-card:hover::before {
-    opacity: 0.15;
+.role {
+  color: #cbd5f5;
+  margin-top: 6px;
 }
 
-.team-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+blockquote {
+  margin: 20px 0;
+  font-style: italic;
+  color: #c7d2fe;
+  line-height: 1.6;
 }
 
-.team-card h2,
-.team-card h3,
-.team-card p {
-    position: relative;
-    z-index: 1;
+.social {
+  margin-top: 18px;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #111827;
+  font-weight: bold;
 }
 
-.team-card.faculty {
-    background: linear-gradient(135deg, #0b1120, #111827);
-    color: white;
-    grid-column: 1 / -1;
-    max-width: 500px;
-    margin: 0 auto;
-    width: 100%;
+/* ================= SECTIONS ================= */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
 }
 
-.team-card.faculty h2 {
-    color: #47e4e4;
-    margin-bottom: 8px;
-    font-size: clamp(18px, 2.5vw, 20px);
-    letter-spacing: 1px;
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
 }
 
-.team-card.faculty h3 {
-    font-size: clamp(22px, 3vw, 26px);
-    margin-bottom: 5px;
+/* ================= AVATAR ================= */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+  margin: auto;
 }
 
-.team-card h3 {
-    font-size: clamp(18px, 2.5vw, 20px);
-    margin-bottom: 6px;
-    color: #0b1120;
+/* Avatar Colors */
+.pink { background: #f472b6; }
+.cyan { background: #22d3ee; }
+.orange { background: #fb923c; }
+.purple { background: #8b5cf6; }
+
+/* ================= CORE TEAM ================= */
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
 }
 
-.team-card p {
-    font-size: clamp(14px, 1.5vw, 16px);
-    color: #555;
+.core-card {
+  background: #0b122c;
+  border-radius: 22px;
+  padding: 40px 25px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: 0.35s ease;
 }
 
+.core-card h3 {
+  margin-top: 18px;
+  font-size: 22px;
+}
+
+.core-card p {
+  margin-top: 6px;
+  color: #cbd5f5;
+}
+
+.core-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(34,211,238,0.18);
+}
+
+/* ================= TEAM MEMBERS ================= */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.member-card {
+  background: #0b122c;
+  border-radius: 22px;
+  padding: 30px 28px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: 0.3s;
+}
+
+.member-card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.member-card ul {
+  padding-left: 18px;
+}
+
+.member-card li {
+  margin-bottom: 10px;
+  color: #cbd5f5;
+  line-height: 1.5;
+}
+
+.member-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(34,211,238,0.12);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1000px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .core-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title h1 {
+    font-size: 32px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
 /* --
    FOOTER
 --= */
@@ -1800,22 +1892,23 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px;
     font-weight: 600;
     color: #fbbf24;
+    
    
 }
 
 .achievement-badge::before {
-    content: "🏆";
+    content: "";
     font-size: 24px;
     background: rgba(234, 179, 8, 0.2);
     width: 50px;
     height: 50px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
     border: 1px solid rgba(234, 179, 8, 0.3);
     position: absolute;
-    left: 2px;
+    
     margin-left: -50px;
 }
 
