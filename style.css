@@ -50,8 +50,8 @@ header {
 }
 
 #logo {
-    width: 80px;
-    height: 50px;
+    width: 100px;
+    height: 70px;
     object-fit: contain;
     margin-right:  450px;
     
@@ -245,7 +245,7 @@ header {
 #project-head {
     padding: 60px 5% 40px;
     text-align: center;
-    background: linear-gradient(135deg, #47a2d3, #b7becc);
+    background:linear-gradient(rgb(65, 17, 138),rgb(14, 32, 97));
 }
 
 #project-head h1 {
@@ -779,14 +779,14 @@ header {
    EVENTS PAGE
 --= */
 .events-page {
-    background: #f5f7fb;
-    color: #111;
+   background:linear-gradient(rgb(14, 32, 97),rgb(179, 59, 127));
+    color: #f1eaea;
 }
 
 .events-page-title {
     text-align: center;
     padding: 60px 20px 40px;
-    background: linear-gradient(135deg, #0b1120, #111827);
+    background:linear-gradient(rgb(65, 17, 138),rgb(14, 32, 97));
     color: white;
 }
 
@@ -830,15 +830,17 @@ header {
 }
 
 .event-card {
-    background: white;
+    background: rgb(23, 22, 55);
     border-radius: 16px;
     padding: 25px;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 10px rgba(162, 22, 170, 0.08);
+    transition: 0.3s ease;
 }
 
+
+
 .event-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
 }
 
@@ -849,7 +851,7 @@ header {
 
 .event-card p {
     font-size: clamp(14px, 1.5vw, 15px);
-    color: #444;
+    color: #f8f5f5;
     margin: 6px 0;
 }
 
@@ -884,7 +886,7 @@ header {
 .event-card button {
     margin-top: 15px;
     padding: 10px 16px;
-    background: #0b1120;
+    background: #09af2b;
     color: white;
     border: none;
     border-radius: 10px;
@@ -894,7 +896,7 @@ header {
 }
 
 .event-card button:hover {
-    background: #111827;
+    background: #3ad322;
 }
 
 .event-progress-bar {
@@ -918,31 +920,26 @@ header {
     color: #666;
 }
 
-/* --
-   TEAM PAGE
---= */
-/* ================= RESET ================= */
+/*  TEAM PAGE*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================= BODY ================= */
-
-
-/* ================= PAGE TITLE ================= */
 .page-title {
   text-align: center;
   padding: 70px 20px 40px;
+  color: whitesmoke;
 }
 
 .page-title h1 {
   font-size: 42px;
   font-weight: 600;
+  
 }
 
-/* ================= FACULTY ADVISOR ================= */
+
 .advisor-section {
   display: flex;
   justify-content: center;
@@ -950,13 +947,14 @@ header {
 }
 
 .advisor-card {
-  background: #0b122c;
+  background: #242d4c;
   width: min(720px, 95%);
   padding: 45px 35px;
   border-radius: 22px;
   text-align: center;
   border: 1px solid rgba(255,255,255,0.06);
   box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+  color: whitesmoke;
 }
 
 .advisor-card h2 {
@@ -985,7 +983,7 @@ blockquote {
   font-weight: bold;
 }
 
-/* ================= SECTIONS ================= */
+
 .section {
   max-width: 1200px;
   margin: auto;
@@ -998,24 +996,25 @@ blockquote {
   margin-bottom: 50px;
 }
 
-/* ================= AVATAR ================= */
+
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 42px;
   margin: auto;
-}
+  }
+  
 
-/* Avatar Colors */
+
 .pink { background: #f472b6; }
 .cyan { background: #22d3ee; }
 .orange { background: #fb923c; }
 .purple { background: #8b5cf6; }
 
-/* ================= CORE TEAM ================= */
+
 .core-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1023,7 +1022,7 @@ blockquote {
 }
 
 .core-card {
-  background: #0b122c;
+   background: #242d4c;
   border-radius: 22px;
   padding: 40px 25px;
   text-align: center;
@@ -1034,6 +1033,7 @@ blockquote {
 .core-card h3 {
   margin-top: 18px;
   font-size: 22px;
+  color: whitesmoke;
 }
 
 .core-card p {
@@ -1046,7 +1046,7 @@ blockquote {
   box-shadow: 0 25px 45px rgba(34,211,238,0.18);
 }
 
-/* ================= TEAM MEMBERS ================= */
+
 .members-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1054,7 +1054,7 @@ blockquote {
 }
 
 .member-card {
-  background: #0b122c;
+  background: #5c6480;
   border-radius: 22px;
   padding: 30px 28px;
   border: 1px solid rgba(255,255,255,0.06);
@@ -1064,6 +1064,7 @@ blockquote {
 .member-card h3 {
   margin-bottom: 15px;
   font-size: 20px;
+  color: white;
 }
 
 .member-card ul {
@@ -1081,7 +1082,7 @@ blockquote {
   box-shadow: 0 20px 40px rgba(34,211,238,0.12);
 }
 
-/* ================= RESPONSIVE ================= */
+
 @media (max-width: 1000px) {
   .members-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1167,11 +1168,7 @@ footer > p {
     font-size: clamp(12px, 1.5vw, 14px);
 }
 
-/* --
-   RESPONSIVE MEDIA QUERIES
---= */
 
-/* Tablet and below (768px) */
 @media (max-width: 768px) {
     .head {
         flex-direction: column;
@@ -1218,7 +1215,7 @@ footer > p {
         padding: 25px;
     }
 
-    /* Projects Page Mobile */
+   
     #project-head {
         padding: 40px 5% 30px;
     }
@@ -1239,7 +1236,7 @@ footer > p {
         margin: 5px;
     }
 
-    /* About Page Mobile */
+    
     .about {
         margin-top: 40px;
         padding: 15px 5%;
@@ -1555,12 +1552,12 @@ footer > p {
     }
 }
 
-/* Dark Mode Support (if needed in future) */
+
 @media (prefers-color-scheme: dark) {
-    /* Already using dark theme, but can be customized */
+    
 }
 
-/* Landscape Orientation for Tablets */
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .hero-section {
         min-height: 200px;
@@ -1618,7 +1615,6 @@ html {
     color: #020617;
 }
 
-/* Scrollbar Styling (Webkit browsers) */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -2056,7 +2052,7 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 1400px;
     margin: 0 auto;
     padding: 60px 5%;
-    background: #0a0f1e;
+   background:linear-gradient(rgb(14, 32, 97),rgb(59, 35, 98),rgb(179, 59, 127));
     color: white;
 }
 
@@ -2565,10 +2561,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-/* ===============================
-   HAMBURGER MENU STYLES
-   Add this to the end of your style.css file
-================================ */
+/* HAMBURGER MENU STYLES*/
 
 .hamburger {
     display: none;
