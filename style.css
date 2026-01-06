@@ -80,7 +80,7 @@ header {
    HERO SECTION (HOME)
 --= */
 .hero-section {
-    background:none;
+    background:linear-gradient(rgb(9, 21, 63));
     min-height: 300px;
     display: flex;
     justify-content: center;
@@ -189,6 +189,7 @@ header {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 .stat h2 {
@@ -208,6 +209,7 @@ header {
     padding: 60px 5%;
     text-align: center;
     background-color: #0c1436;
+    border-radius: 15px;
 }
 
 .cta-section h2 {
