@@ -369,6 +369,8 @@ header {
 .Robotics h2 {
     padding-bottom: 15px;
     font-size: clamp(20px, 3vw, 24px);
+   text-align: center;
+
 }
 
 .Robotics p {

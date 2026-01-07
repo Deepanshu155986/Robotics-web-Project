@@ -7,21 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filters button');
     const registerButtons = document.querySelectorAll('.event-card button');
 
-    // Sort events by date
+    
     if (sortSelect && eventsGrid) {
         sortSelect.addEventListener('change', function() {
             const eventCards = Array.from(eventsGrid.querySelectorAll('.event-card'));
             const sortValue = this.value;
             
             if (sortValue === 'date-asc') {
-                // Sort by date ascending (earliest first)
+               
                 eventCards.sort((a, b) => {
                     const dateA = new Date(a.getAttribute('data-date'));
                     const dateB = new Date(b.getAttribute('data-date'));
                     return dateA - dateB;
                 });
             } else if (sortValue === 'date-desc') {
-                // Sort by date descending (latest first)
+                
                 eventCards.sort((a, b) => {
                     const dateA = new Date(a.getAttribute('data-date'));
                     const dateB = new Date(b.getAttribute('data-date'));
@@ -188,9 +188,9 @@ function scrollToTop() {
     });
 }
 
-// ============================================
+
 // CONTACT PAGE FUNCTIONALITY
-// ============================================
+
 
 // Contact form submission
 const contactForm = document.querySelector('#secondpart3 form');
@@ -282,9 +282,9 @@ socialIcons.forEach((icon, index) => {
     });
 });
 
-// ============================================
+
 // ACHIEVEMENTS PAGE FUNCTIONALITY
-// ============================================
+// =
 
 // Animate achievement cards on scroll
 const achievementSections = document.querySelectorAll('#firstpart2 > div, #firstpart4 > div, #firstpart6 > div');
@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <span></span>
         `;
         
-        // Insert hamburger before navbar
+        
         head.insertBefore(hamburger, navbar);
         
         // Toggle menu on hamburger click
@@ -457,5 +457,6 @@ function scrollToTop() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
-    });
+    }
+    );
 }
