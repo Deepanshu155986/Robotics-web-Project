@@ -1541,7 +1541,7 @@ footer > p {
     }
 }
 
-/* High Contrast Mode */
+
 @media (prefers-contrast: high) {
     .nav-btn,
     .filter-btn,
@@ -1597,7 +1597,7 @@ footer > p {
     }
 }
 
-/* Focus Visible for Keyboard Navigation */
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -1606,12 +1606,12 @@ select:focus-visible {
     outline-offset: 2px;
 }
 
-/* Smooth Scrolling */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Selection Styling */
+
 ::selection {
     background-color: #38bdf8;
     color: #020617;
@@ -1673,7 +1673,7 @@ img {
     border-width: 0;
 }
 
-/* Animation Classes */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1689,13 +1689,13 @@ img {
     animation: fadeIn 0.6s ease-out;
 }
 
-/* Prevent text overflow */
+
 h1, h2, h3, h4, h5, h6, p {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
-/* Container helper */
+
 .container {
     width: 100%;
     max-width: 1400px;
@@ -2718,6 +2718,9 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
     z-index: 1001;
     transition: transform 0.3s ease;
+    margin-left: auto;
+   margin-top: 0;
+   
 }
 
 .hamburger span {
@@ -2815,15 +2818,23 @@ body.menu-open {
     .head {
         position: relative;
         padding: 15px 20px;
+       
     }
 
     .head h2 {
-        font-size: 20px;
+        font-size: 30px;
+        
+       
     }
 
     #logo {
-        width: 60px;
-        height: 40px;
+        width: 100px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;          
+    }
+    .s{
+        display: block;
     }
 }
 
