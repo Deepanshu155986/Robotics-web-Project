@@ -1085,11 +1085,12 @@ blockquote {
 }
 
 .member-card {
-  background:linear-gradient(rgb(9, 21, 63));
+  background:linear-gradient(rgb(33, 42, 75));
   border-radius: 22px;
   padding: 30px 28px;
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 2px solid #00d3f3;
   transition: 0.3s;
+  box-shadow: 0 0 10px 2px  #00d3f3;
 }
 
 .member-card h3 {
@@ -1100,6 +1101,11 @@ blockquote {
 
 .member-card ul {
   padding-left: 18px;
+  color: #00d3f3;
+}
+ul li::marker {
+  color: #00d3f3;
+  
 }
 
 .member-card li {
@@ -2195,13 +2201,17 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 15px;
 }
 
-img{
+.img-achieve{
     width: 130px;
     height: auto;
     border-radius: 10px;
     border: 2px;
     border-style: solid;
     border-color: rgb(74, 76, 80);
+    transition:transform 0.5s ease ;
+}
+.img-achieve:hover{
+    transform: scale(1.2);
 }
 #newimage{
     width: 160px;
