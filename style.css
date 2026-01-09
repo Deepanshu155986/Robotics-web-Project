@@ -16,7 +16,7 @@
 }
 
 body {
-   background:linear-gradient(rgb(14, 32, 97));
+   background:rgb(14, 32, 97);
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -80,7 +80,7 @@ header {
    HERO SECTION (HOME)
 --= */
 .hero-section {
-    background:linear-gradient(rgb(9, 21, 63));
+    background:rgb(9, 21, 63);
     min-height: 300px;
     display: flex;
     justify-content: center;
@@ -370,7 +370,17 @@ header {
     text-align: left;
     background-color: rgba(11, 26, 47, 0.7);
 }
-
+.about-img{
+    width: 300px;
+    height:210px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.5s ease
+}
+.about-img:hover{
+    
+    transform:scale(1.2);
+}
 .Robotics h2 {
     padding-bottom: 15px;
     font-size: clamp(20px, 3vw, 24px);
@@ -425,17 +435,7 @@ header {
 }
 .mission-border:hover{
     transform:translateY(-10px)};
-.icon2 {
-    background-image: url("/image/workshop.jpeg");
-}
 
-.icon3 {
-    background-image: url("images/sucess2.png");
-}
-
-.icon4 {
-    background-image: url("images/sucess3.jpg");
-}
 
 .border h1 {
     font-size: clamp(20px, 3vw, 24px);
@@ -583,21 +583,7 @@ header {
     background-size: cover;
 }
 
-.icon9 {
-    background-image: url("/image/achievement.png");
-}
 
-.icon10 {
-    background-image: url("images/sucess9.jpg");
-}
-
-.icon11 {
-    background-image: url("images/sucess10.jpg");
-}
-
-.icon12 {
-    background-image: url("images/sucess11.jpg");
-}
 
 .main {
     padding: 60px 5%;
@@ -992,7 +978,7 @@ header {
 }
 
 .advisor-card {
-  background:linear-gradient(rgb(9, 21, 63));
+  background:rgb(9, 21, 63);
   width: min(720px, 95%);
   padding: 45px 35px;
   border-radius: 22px;
@@ -1025,7 +1011,7 @@ blockquote {
   display: inline-block;
   padding: 8px 12px;
   border-radius: 8px;
-  background:linear-gradient(rgb(9, 21, 63));
+  background:rgb(9, 21, 63);
   font-weight: bold;
 }
 
@@ -1069,7 +1055,7 @@ blockquote {
 }
 
 .core-card {
-   background: linear-gradient(rgb(9, 21, 63));
+   background: rgb(9, 21, 63);
   border-radius: 22px;
   padding: 40px 25px;
   text-align: center;
@@ -1102,7 +1088,7 @@ blockquote {
 }
 
 .member-card {
-  background:linear-gradient(rgb(33, 42, 75));
+  background:rgb(33, 42, 75);
   border-radius: 22px;
   padding: 30px 28px;
   border: 2px solid #00d3f3;
